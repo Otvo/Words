@@ -1,0 +1,1 @@
+<view><view class="center_column"><view class="smallFont"><image class="dataImage" src="{{imageSrc}}"></image>{{''+(" "+title)+''}}</view><view><text class="largeFont">{{number}}</text><text class="wordFont">{{" "+unit}}</text></view></view></view>

@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/Home/Home",
+    "pages/Login/Login",
+    "pages/Search/Search",
+    "pages/BooksLibrary/BooksLibrary",
+    "pages/Share/Share",
+    "pages/Set/Set",
+    "pages/Learn/Learn",
+    "pages/Review/Review",
+    "pages/Notebook/Notebook",
+    "pages/MyBooks/MyBooks",
+    "pages/My/My",
+    "pages/InfoSet/InfoSet",
+    "pages/Vip/Vip"
+  ],
+  "subPackages": [],
+  "window": {
+    "enablePullDownRefresh": "false",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

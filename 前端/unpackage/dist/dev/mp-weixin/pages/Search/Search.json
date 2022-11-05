@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "翻译",
+  "usingComponents": {
+    "uni-group": "/uni_modules/uni-group/components/uni-group/uni-group",
+    "uni-easyinput": "/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput"
+  }
+}

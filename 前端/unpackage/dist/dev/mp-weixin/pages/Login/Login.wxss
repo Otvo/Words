@@ -1,0 +1,86 @@
+
+page {
+	font-family: 'Noto Serif JP', serif;
+}
+.background {
+	box-sizing: border-box;
+	overflow: hidden;
+	position: absolute;
+	z-index: -2;
+	display: flex;
+	flex-direction: column;
+}
+.mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: -1;
+}
+.logIn {
+	padding-top: 200rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 80rpx;
+	text-align: center;
+	z-index: 2;
+	color: #FF9500;
+}
+.logWord {
+	font-size: 35rpx;
+	height: 50rpx;
+	margin-top: 30rpx;
+	margin-bottom: 50rpx;
+	line-height: 50rpx;
+	color: #e8eded;
+	text-align: center;
+}
+.input {
+	height: 90rpx;
+	width: 550rpx;
+	margin: 40rpx auto;
+	padding: 0rpx 50rpx;
+	font-family: 'Noto Serif JP', serif;
+	border: 1px solid #e5e5e5;
+	border-radius: 45rpx;
+	color: #ffffff;
+}
+.co {
+	font-family: 'Noto Serif JP', serif;
+	color: #faffff;
+}
+.btn {
+	width: 650rpx;
+	margin: 60rpx auto 20rpx auto;
+	text-align: center;
+	height: 90rpx;
+	border-radius: 45rpx;
+	color: #ffffff !important;
+	font-size: 45rpx;
+	line-height: 90rpx;
+	background: rgba(255, 255, 255, 0);
+	border: 1px solid #e5e5e5;
+}
+.iconBox {
+	width: 500rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.icon {
+	font-size: 45rpx;
+}
+.usermotto {
+	position: fixed;
+	bottom: 300rpx;
+	text-align: center;
+	height: 50rpx;
+	width: 100%;
+	line-height: 50rpx;
+	font-size: 40rpx;
+	color: #595959;
+}
+

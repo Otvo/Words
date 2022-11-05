@@ -1,0 +1,184 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/Home/Home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"app-plus": { //app平台
+					"bounce": "none" //禁止滚动
+				}
+			}
+
+		}, {
+			"path": "pages/Login/Login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": { //app平台
+					"bounce": "none" //禁止滚动
+				}
+			}
+
+		}, {
+			"path": "pages/Search/Search",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "翻译",
+				"app-plus": {
+					"titleNView": {
+						"type": "float",
+						"backgroundColor": "rgba(255, 255, 255, 0)"
+					}
+				}
+			}
+
+		},
+
+		{
+			"path": "pages/BooksLibrary/BooksLibrary",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "书库",
+				"app-plus": {
+					"titleNView": {
+						"type": "float",
+						"backgroundColor": "rgba(255, 255, 255, 0)"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/Share/Share",
+			"style": {
+				"navigationBarTitleText": "完成",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"homeButton": true,
+						"autoBackButton": false,
+						"type": "float",
+						"backgroundColor": "rgba(255, 255, 255, 0)"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/Set/Set",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "设置",
+				"app-plus": {
+					"titleNView": {
+						"type": "float",
+						"titleText": "设置",
+						"titleColor": "#FFFFFF",
+						"backgroundColor": "rgba(255, 255, 255,0)"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/Learn/Learn",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": { //app平台
+					"bounce": "none" //禁止滚动
+				}
+			}
+
+		}, {
+			"path": "pages/Review/Review",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": { //app平台
+					"bounce": "none" //禁止滚动
+				}
+			}
+
+		},
+		{
+			"path": "pages/Notebook/Notebook",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "书库",
+				"app-plus": {
+					"titleNView": {
+						"titleColor": "black",
+						"type": "float",
+						"backgroundColor": "rgba(255, 255, 255, 0.7)"
+					},
+					"bounce": "none" //禁止滚动
+				}
+			}
+
+		},
+		{
+			"path": "pages/MyBooks/MyBooks",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "我的图书",
+				"app-plus": {
+					"titleNView": {
+						"type": "float",
+						"backgroundColor": "rgba(255, 255, 255, 0)"
+					}
+				}
+			}
+
+		},
+
+		{
+			"path": "pages/My/My",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"type": "float",
+						"backgroundColor": "rgba(255, 255, 255, 0)"
+					},
+					"bounce": "none" //禁止滚动
+				}
+			}
+
+		}, {
+			"path": "pages/InfoSet/InfoSet",
+			"style": {
+				"navigationBarTitleText": "我的资料",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"type": "float",
+						"backgroundColor": "rgba(255, 255, 255, 0)"
+					},
+					"bounce": "none" //禁止滚动
+				}
+			}
+
+		}, {
+			"path": "pages/Vip/Vip",
+			"style": {
+				"navigationBarTitleText": "会员",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"type": "float",
+						"backgroundColor": "rgba(255, 255, 255, 0)"
+					}
+					// "bounce": "none" //禁止滚动
+				}
+			}
+
+		}
+	],
+	"globalStyle": {
+		"enablePullDownRefresh": "false",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

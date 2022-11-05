@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "书库",
+  "usingComponents": {
+    "book_no-user": "/components/book_noUser/book_noUser"
+  }
+}

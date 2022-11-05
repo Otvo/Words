@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'iconfont';  /* Project id 2700089 */
+  src: url('https://at.alicdn.com/t/font_2700089_wmgoy2mh4ls.woff2?t=1627287852338') format('woff2'),
+       url('https://at.alicdn.com/t/font_2700089_wmgoy2mh4ls.woff?t=1627287852338') format('woff'),
+       url('https://at.alicdn.com/t/font_2700089_wmgoy2mh4ls.ttf?t=1627287852338') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-icon:before {
+  content: "\e600";
+}
+.mask{
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.2);
+}
+.filter {
+	-webkit-filter: blur(40rpx);
+	        filter: blur(40rpx);
+	-webkit-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+
+/*背景图片样式*/
+.background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+/*每个页面公共css */
+.function {
+	position: absolute;
+	bottom: 50rpx;
+	left: 65rpx;
+	right: 61rpx;
+	display: flex;
+	z-index: 2;
+	justify-content: space-between;
+}
+
+/* 水平居中 */
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 垂直排列居中 */
+.center_column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*状态栏占位高度*/
+.status_bar {
+	height: 25px;
+	width: 100%;
+}
+
+/* 标题栏占位宽度 */
+.title_bar {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+/* 小字体 */
+.smallFont {
+	font-size: 25rpx;
+}
+

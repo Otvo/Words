@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "我的图书",
+  "usingComponents": {
+    "book": "/components/book/book"
+  }
+}
