@@ -53,7 +53,7 @@ public class UserService {
         user.setNode(true);
         user.setTime(date);
         if (usersMapper.selectByPrimaryKey(id) == null)
-            return usersMapper.insert(user);
+            return usersMapper.insertSelective(user);
         else
             return 0;
     }

@@ -4,9 +4,7 @@ import com.example.entity.ClockInExample;
 import com.example.entity.ClockInKey;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface ClockInMapper {
     int countByExample(ClockInExample example);
 

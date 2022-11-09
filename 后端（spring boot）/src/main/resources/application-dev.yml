@@ -3,10 +3,10 @@ server:
 
 spring:
   datasource:
-    username: root
+    username: words
     password: 123456
-    url: jdbc:mysql://212.129.252.199:3306/words
-    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://124.220.22.177:3306/words
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml

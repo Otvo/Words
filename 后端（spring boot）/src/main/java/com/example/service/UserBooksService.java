@@ -87,7 +87,7 @@ public class UserBooksService {
         userbooks.setUserid(id);
         userbooks.setBookid(bookid);
         userbooks.setIsstudying(false);
-        userbooksMapper.insert(userbooks);
+        userbooksMapper.insertSelective(userbooks);
     }
 
     public void deleteBook(String id,int bookid){

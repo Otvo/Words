@@ -199,7 +199,7 @@ public class LearnService {
         learn.setBookid(bookid);
         learn.setWord(word);
         learn.setDate(date);
-        learnMapper.insert(learn);
+        learnMapper.insertSelective(learn);
     }
 
     public void reviewWords(String id,String word,int master){

@@ -4,9 +4,7 @@ import com.example.entity.Dic;
 import com.example.entity.DicExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface DicMapper {
     int countByExample(DicExample example);
 

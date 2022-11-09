@@ -4,9 +4,7 @@ import com.example.entity.BookwordsExample;
 import com.example.entity.BookwordsKey;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface BookwordsMapper {
     int countByExample(BookwordsExample example);
 

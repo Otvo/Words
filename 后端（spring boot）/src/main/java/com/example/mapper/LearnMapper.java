@@ -5,9 +5,7 @@ import com.example.entity.LearnExample;
 import com.example.entity.LearnKey;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface LearnMapper {
     int countByExample(LearnExample example);
 

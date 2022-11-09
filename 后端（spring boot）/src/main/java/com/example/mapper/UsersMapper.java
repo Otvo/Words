@@ -4,9 +4,7 @@ import com.example.entity.Users;
 import com.example.entity.UsersExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface UsersMapper {
     int countByExample(UsersExample example);
 

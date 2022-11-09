@@ -4,9 +4,7 @@ import com.example.entity.Books;
 import com.example.entity.BooksExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface BooksMapper {
     int countByExample(BooksExample example);
 

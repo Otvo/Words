@@ -5,9 +5,7 @@ import com.example.entity.UserbooksExample;
 import com.example.entity.UserbooksKey;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface UserbooksMapper {
     int countByExample(UserbooksExample example);
 

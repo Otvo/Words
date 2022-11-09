@@ -3,8 +3,7 @@
 		//全局变量
 		globalData: {
 			userInformation: {},//用户信息
-			// URL: "http://212.129.252.199:12306",
-			URL: "http://localhost:8080",
+			URL: "http://124.220.22.177:12306",
 			avatar:'/static/image/touxiang.png',//用户头像
 			BGURL: "https://api.kdcc.cn",//背景图片地址
 			day: "",
