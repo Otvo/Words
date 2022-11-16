@@ -76,30 +76,38 @@
 				this.$refs.popup.close()
 			},
 			confirm() {
-				var that = this;
-				uni.showLoading({
-					title: '正在' + this.text
-				})
-				var operate=""
-				if (this.text == "更改正在学习") {
-					operate="/userbook/setLearnningBook"
-				}else if(this.text=="清空"){
-					operate="/learn/clearBookRecord"
-				}else if(this.text=="删除"){
-					operate="/userbook/deleteBook"
-				}
-				uni.request({
-					url: getApp().globalData.URL + operate,
-					data: {
-						userID: getApp().globalData.userInformation.userID,
-						bookID: that.$props.book.id,
-					},
-					success: (res) => {
-						uni.hideLoading()
-						that.$emit('update')
+				if (this.$props.book.name!="请选择书籍"){
+					var that = this;
+					uni.showLoading({
+						title: '正在' + this.text
+					})
+					var operate=""
+					if (this.text == "更改正在学习") {
+						operate="/userbook/setLearnningBook"
+					}else if(this.text=="清空"){
+						operate="/learn/clearBookRecord"
+					}else if(this.text=="删除"){
+						operate="/userbook/deleteBook"
 					}
-				});
-				this.$refs.popup.close()
+					uni.request({
+						url: getApp().globalData.URL + operate,
+						data: {
+							userID: getApp().globalData.userInformation.userID,
+							bookID: that.$props.book.id,
+						},
+						success: (res) => {
+							uni.hideLoading()
+							that.$emit('update')
+						}
+					});
+					this.$refs.popup.close()
+				}else{
+					uni.showToast({
+						title:"无法进行此操作",
+						icon:'error',
+						duration:1300
+					})
+				}
 			}
 		}
 	}
