@@ -80,16 +80,14 @@
         "devServer" : {
             "port" : 8000,
             "disableHostCheck" : true,
-            "proxy" : {
-                "/baidu" : {
-                    "target" : "https://fanyi-api.baidu.com/api/trans/vip/translate",
-                    "changeOrigin" : true,
-                    "secure" : true,
-                    "pathRewrite" : {
-                        "^/baidu" : ""
-                    }
-                }
+            "proxy": {
+				"/prefix/api/user/list": {
+					"target": "https://api-remote.xxxx.com",
+					"pathRewrite": {
+						"^/prefix": ""
+					}
+				}
             }
-        }
-    }
+		}
+	}
 }

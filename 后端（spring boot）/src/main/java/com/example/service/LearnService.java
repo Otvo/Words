@@ -252,6 +252,10 @@ public class LearnService {
         learnKey.setBookid(bookid);
         learnKey.setWord(word);
         Learn learn=learnMapper.selectByPrimaryKey(learnKey);
+        if(learn==null){
+            learnWords(id,word,0);
+        }
+        learn=learnMapper.selectByPrimaryKey(learnKey);
         learn.setCollect(!learn.getCollect());
         learnMapper.updateByPrimaryKey(learn);
     }

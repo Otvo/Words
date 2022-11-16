@@ -197,12 +197,19 @@
 				});
 			},
 			collect() {
-				var e = {
-					currentTarget: {
-						id: 1
-					}
+				if (this.today == this.learnNum) {
+					uni.navigateTo({
+						animationType: 'fade-in',
+						animationDuration: 300,
+						url: '/pages/Share/Share',
+					})
+				} else {
+					this.today = this.today + 1;
+					this.cur = this.cur + 1;
+					this.accent()
+					this.isCollect = false;
+					this.isShow = !this.isShow;
 				}
-				this.next(e);
 				var that = this;
 				uni.request({
 					url: app.globalData.URL + "/learn/collect",
@@ -211,11 +218,6 @@
 						word: that.words[that.cur].spell
 					},
 				});
-				if (this.isCollect) {
-					this.isCollect = false;
-				} else {
-					this.isCollect = true;
-				}
 			}
 		}
 	}
