@@ -3,7 +3,7 @@
 		<view class="mask"></view>
 		<image class="background" :src="BGURL" mode="aspectFill"></image>
 
-		<view v-if="isLog">
+		<view v-show="isLog">
 			<view class="logIn">
 				Log In
 			</view>
@@ -11,8 +11,8 @@
 
 			<form @submit="logIn">
 				<view class="container">
-					<input class="input" name="userID" placeholder="UserID" placeholder-class="co" />
-					<input class="input" password="true" name="password" placeholder="password"
+					<input class="input" name="userID"  placeholder="UserID" placeholder-class="co" />
+					<input class="input"  name="password" placeholder="password"
 						placeholder-class="co" />
 				</view>
 				<button class="btn" plain="true" form-type="submit">
@@ -32,16 +32,16 @@
 				<view class="iconfont icon" @click="logInBy('sinaweibo')">&#xe641;</view>
 			</view>
 		</view>
+S
 
-
-		<view v-if="!isLog">
+		<view v-show="!isLog">
 			<view class="logIn">
 				Register
 			</view>
 			<view class="logWord">Your Account</view>
-			<form @submit="register">
+			<form @submit="register" >
 				<view class="container">
-					<input class="input" name="userID" placeholder="UserID" placeholder-class="co" />
+					<input class="input" name="userID" v-model="userID" placeholder="UserID" placeholder-class="co" />
 					<input class="input" name="nickName" placeholder="NickName" placeholder-class="co" />
 					<input class="input" password="true" name="password1" placeholder="password"
 						placeholder-class="co" />
@@ -139,7 +139,7 @@
 				//修改页面类型
 				this.isLog = !this.isLog
 			},
-
+			
 
 			logInBy: function(loginType) {
 				var that = this;
@@ -217,7 +217,6 @@
 				})
 
 			},
-
 			register: function(e) {
 				console.log('form发生了submit事件，携带数据为：' + JSON.stringify(e.detail.value))
 				const data = e.detail.value;
@@ -272,7 +271,8 @@
 						showCancel: false
 					});
 				}
-
+				console.log(12344)
+				this.userID = ''
 			},
 			registerRequest: async function(userID, password, nickName) {
 				var [error, res] = await uni.request({
@@ -286,7 +286,7 @@
 				console.log(res.data);
 				return res.data.success;
 			}
-
+			
 		}
 	}
 </script>
@@ -346,7 +346,7 @@
 
 	.co {
 		font-family: 'Noto Serif JP', serif;
-		color: #faffff;
+		color: #cccccc;
 	}
 
 	.btn {
@@ -358,7 +358,8 @@
 		color: #ffffff !important;
 		font-size: 45rpx;
 		line-height: 90rpx;
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255, 255, 255,0.15) !important;
+		
 		border: 1px solid #e5e5e5;
 	}
 

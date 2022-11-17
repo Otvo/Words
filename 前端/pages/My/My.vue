@@ -24,7 +24,7 @@
 
 			<view class="ctxCard">
 				<view class="title">
-					<text>学习设置</text>
+					<text>学习设置 </text>
 				</view>
 				<view class="SetCard">
 					<view class="topCtx">
