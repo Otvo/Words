@@ -12,7 +12,7 @@
 			<form @submit="logIn">
 				<view class="container">
 					<input class="input" name="userID"  placeholder="UserID" placeholder-class="co" />
-					<input class="input"  name="password" placeholder="password"
+					<input class="input" password="true" name="password" placeholder="password"
 						placeholder-class="co" />
 				</view>
 				<button class="btn" plain="true" form-type="submit">

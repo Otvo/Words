@@ -5,7 +5,7 @@
 			userInformation: {},//用户信息
 			URL: "http://124.220.22.177:12306",
 			avatar:'/static/image/touxiang.png',//用户头像
-			BGURL: "https://api.kdcc.cn",//背景图片地址
+			BGURL: "https://api.kdcc.cn/img/?day=2022/11/21",//背景图片地址
 			day: "",
 			daily: "",
 			translation: "",
